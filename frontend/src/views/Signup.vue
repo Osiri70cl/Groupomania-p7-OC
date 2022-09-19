@@ -27,17 +27,11 @@ export default {
   color: white;
   background-color: #4e5166;
 }
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 .welcomeSection {
   margin: 50px auto;
   max-width: 850px;
-  height: 500px;
+  height: 700px;
 }
 
 .formLayout {

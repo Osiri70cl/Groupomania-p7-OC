@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="text-container">
+    <div class="text-container-footer">
       <p class="text-center">© Rémi.P Projet 7 Groupomania OPENCLASSROOMS</p>
     </div>
   </footer>
@@ -15,7 +15,7 @@
   height: 99px;
   background-color: #000000;
 }
-.text-container {
+.text-container-footer {
   height: 100%;
   display: flex;
   flex-direction: column;
