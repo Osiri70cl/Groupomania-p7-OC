@@ -1,5 +1,5 @@
 <template>
-  <div class="form-container">
+  <article class="form-container">
     <form class="form">
       <div class="input-div-signup">
         <input
@@ -78,7 +78,7 @@
         d'espaces.
       </p>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>

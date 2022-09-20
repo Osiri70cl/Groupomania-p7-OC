@@ -1,6 +1,6 @@
 <template>
-  <div class="mainProfilArea">
-    <div class="mainProfilArea-center">
+  <main class="mainProfilArea">
+    <section class="mainProfilArea-center">
       <div class="card-top">
         <div class="card-top-icons">
           <button
@@ -54,8 +54,8 @@
           </p>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 </template>
 
 <script>

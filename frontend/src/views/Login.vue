@@ -1,12 +1,10 @@
 <template>
-  <div class="main">
+  <main class="main">
     <h1 class="title-login">Nous vous attendions !</h1>
-    <div class="welcomeSection">
-      <div id="login-form" class="loginForm">
-        <loginForm />
-      </div>
-    </div>
-  </div>
+    <section class="welcomeSection">
+      <loginForm />
+    </section>
+  </main>
 </template>
 
 <script>

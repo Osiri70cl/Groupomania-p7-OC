@@ -1,12 +1,10 @@
 <template>
-  <div class="main">
+  <main class="main">
     <h1 class="title-form">Inscrivez-vous dès aujourd'hui !</h1>
-    <div class="welcomeSection-form">
-      <div id="login-form" class="formLayout">
-        <signupForm />
-      </div>
-    </div>
-  </div>
+    <section class="welcomeSection-form">
+      <signupForm />
+    </section>
+  </main>
 </template>
 
 <script>

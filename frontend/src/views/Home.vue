@@ -1,8 +1,8 @@
 <template>
-  <div class="main">
+  <main class="main">
     <h1 class="title">Réseau Groupomania</h1>
-    <div class="welcomeSection">
-      <div class="welcomeText">
+    <section class="welcomeSection">
+      <article class="welcomeText">
         <p class="text">
           Groupomania est heureux de vous présenter son réseau social !<br /><br />
           N'attendez plus et venez rejoindre vos collègues parmis nous ! Venez
@@ -11,15 +11,15 @@
           Pour cela il suffit de vous connecter, ou de vous inscrire si cela
           n'est pas déjà fait
         </p>
-        <div class="buttonArea">
+        <article class="buttonArea">
           <button @click="toLogin()" class="textButton pink">
             Déjà inscrit ?
           </button>
           <button @click="toSignup()" class="textButton red">S'inscrire</button>
-        </div>
-      </div>
-    </div>
-  </div>
+        </article>
+      </article>
+    </section>
+  </main>
 </template>
 
 <script>

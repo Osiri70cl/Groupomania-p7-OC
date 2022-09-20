@@ -1,6 +1,6 @@
 <template>
-  <div class="mainProfilArea">
-    <div class="mainProfilArea-center">
+  <main class="mainProfilArea">
+    <section class="mainProfilArea-center">
       <div
         v-if="
           $store.state.user.userId == users.id ||
@@ -55,8 +55,8 @@
           </p>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 </template>
 
 <script>

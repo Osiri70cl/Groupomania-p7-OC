@@ -1,7 +1,7 @@
 <template>
-  <div class="core">
-    <div class="feed">
-      <div class="userFeed">
+  <main class="core">
+    <article class="feed">
+      <article class="userFeed">
         <img
           v-if="user.picture !== null"
           class="userPicture"
@@ -17,20 +17,20 @@
           <post-modal v-show="showModal" @close="closeModal" />
           <!-- Le composant modal s'affiche au click -->
         </button>
-      </div>
+      </article>
 
-      <div v-if="$store.state.posts == 0" class="div-text">
+      <article v-if="$store.state.posts == 0" class="div-text">
         <p class="textNoPost">
           Aucune publications !<br />
           Soyez le premier ou la première à créer un post 😄 !
         </p>
-      </div>
+      </article>
 
       <postView v-for="post of posts" :key="post.id" :post="post" :id="post.id">
         <!-- Le contenu itéré sera affiché via le composant post.vue -->
       </postView>
-    </div>
-  </div>
+    </article>
+  </main>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="form-container-login">
+  <article class="form-container-login">
     <form class="form">
       <div class="input-div">
         <input
@@ -36,7 +36,7 @@
         </p>
       </div>
     </form>
-  </div>
+  </article>
 </template>
 
 <script>

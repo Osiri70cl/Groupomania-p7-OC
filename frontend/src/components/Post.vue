@@ -1,6 +1,6 @@
 <template>
-  <div class="post-main">
-    <div class="post-display">
+  <article class="post-main">
+    <figure class="post-display">
       <div class="post-top">
         <div class="post-img">
           <img
@@ -53,12 +53,12 @@
         <img class="post-big-img" :src="post.link" alt="gif posté" />
       </div>
 
-      <div class="text-container">
+      <figcaption class="text-container">
         <p class="text-post">{{ post.message }}</p>
-      </div>
+      </figcaption>
 
       <!-- Affichage du bouton like et commentaires, et de leurs compteurs -->
-      <div class="iconsCounters">
+      <article class="iconsCounters">
         <div class="iconsCountersDiv">
           <button type="button" title="Liker" @click="likePost(post.id)">
             <HeartIcon :class="postLiked" />
@@ -79,10 +79,10 @@
             {{ post.Comments.length }}
           </p>
         </div>
-      </div>
+      </article>
 
       <!-- Section commentaires -->
-      <div class="commentSection" v-show="showComments">
+      <section class="commentSection" v-show="showComments">
         <form>
           <div class="commentDiv">
             <textarea
@@ -105,7 +105,7 @@
             </button>
           </div>
         </form>
-        <div class="commentList">
+        <article class="commentList">
           <div
             v-for="comment of post.Comments"
             :key="comment.id"
@@ -148,10 +148,10 @@
               <p class="smallText">{{ comment.comment }}</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        </article>
+      </section>
+    </figure>
+  </article>
 </template>
 
 <script>
