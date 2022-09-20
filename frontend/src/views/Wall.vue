@@ -177,12 +177,20 @@ export default {
   }
 
   .postButton {
-    max-width: 100%;
+    width: 100%;
+    height: 50px;
   }
 
   .newPostBanner {
     width: 100%;
     height: 100%;
+  }
+  .newPostText {
+    font-size: 20px;
+  }
+  .newPostIcon {
+    height: 30px;
+    width: 30px;
   }
 }
 </style>

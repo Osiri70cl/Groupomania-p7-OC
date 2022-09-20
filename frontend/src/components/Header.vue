@@ -153,5 +153,8 @@ export default {
     height: 100%;
     justify-content: center;
   }
+  .allLinks {
+    margin-bottom: 20px;
+  }
 }
 </style>

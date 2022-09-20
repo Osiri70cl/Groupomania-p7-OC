@@ -46,8 +46,7 @@
           <p class="fontText">{{ user.email }}</p>
         </div>
         <div class="user-info">
-          <ChatIcon class="icons" />
-          <p class="fontText">A propos</p>
+          <h3 class="fontText-title">Bio :</h3>
         </div>
         <div class="user-info-text">
           <p class="user-text">
@@ -63,16 +62,11 @@
 import { mapState } from "vuex";
 import moment from "moment";
 import modifyUser from "../components/UserModifyModal.vue";
-import {
-  PencilIcon,
-  MailIcon,
-  ChatIcon,
-  TrashIcon,
-} from "@heroicons/vue/solid";
+import { PencilIcon, MailIcon, TrashIcon } from "@heroicons/vue/solid";
 
 export default {
   name: "Profil",
-  components: { modifyUser, PencilIcon, MailIcon, ChatIcon, TrashIcon },
+  components: { modifyUser, PencilIcon, MailIcon, TrashIcon },
 
   data: () => ({
     modifyUser: false, // La modale ne doit pas d'afficher initialement
@@ -227,7 +221,6 @@ export default {
   flex-wrap: wrap;
 }
 .user-text {
-  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
@@ -239,12 +232,29 @@ export default {
   font-weight: 500;
   color: rgb(104, 104, 104);
 }
+.fontText-title {
+  font-weight: 700;
+  font-style: italic;
+  color: rgb(104, 104, 104);
+}
 
 @media screen and (max-width: 750px) {
+  .mainProfilArea {
+    height: 120vh;
+  }
   .mainProfilArea-center {
     width: 100%;
     height: 100%;
     background-color: white;
+  }
+  .user-div-info {
+    margin: 30px;
+  }
+  .user-info-text {
+    overflow-y: scroll;
+  }
+  .btn-top {
+    margin: 20px 20px 0px 15px;
   }
 }
 </style>
