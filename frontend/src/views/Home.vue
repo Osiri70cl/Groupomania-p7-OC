@@ -12,8 +12,10 @@
           n'est pas déjà fait
         </p>
         <div class="buttonArea">
-          <button @click="toLogin()" class="textButton">Déjà inscrit ?</button>
-          <button @click="toSignup()" class="textButton">S'inscrire</button>
+          <button @click="toLogin()" class="textButton pink">
+            Déjà inscrit ?
+          </button>
+          <button @click="toSignup()" class="textButton red">S'inscrire</button>
         </div>
       </div>
     </div>
@@ -57,7 +59,6 @@ export default {
 
 .welcomeText {
   width: 100%;
-  height: 100%;
   background-color: #4e5166;
   border-radius: 20px;
   padding: 30px;
@@ -80,14 +81,29 @@ export default {
   padding: 10px;
   border-radius: 5px;
   border: none;
-  background-color: #ffcece;
-  color: #2c3e50;
+
   font-size: 1.2em;
   font-weight: bold;
 }
-button:hover {
+
+.textButton:hover {
   cursor: pointer;
-  background-color: rgb(170, 170, 170);
+  background-color: #4e5166;
+  border: 1px solid white;
+}
+.red {
+  background-color: #fd2d01;
+  color: white;
+  border: 1px solid #fd2d01;
+}
+
+.pink {
+  background-color: #ffcece;
+  color: #2c3e50;
+  border: 1px solid #ffcece;
+}
+.pink:hover {
+  color: white;
 }
 
 @media screen and (max-width: 1000px) {

@@ -8,7 +8,7 @@
 #### Mettez en place la base de données de cette manière :
 
 - Connectez vous au serveur MySQL
-- Lancez la commande suivante pour créer la base de données : `CREATE DATABASE groupomania`
+- Lancez la commande suivante pour créer la base de données : `CREATE DATABASE groupomania_database`
 - Vérifiez que vos identifiants de base de données correspondent avec ceux renseignés dans le fichier .env disponible dans le dossier Backend. Dans le cas échéant modifiez les au sein du fichier
 - Importez enfin le fichier .sql disponible dans le dossier DB du Backend en tapant la commande suivante : `mysql -u votreidentifiant -p groupomania < sauvegarde.sql`
 

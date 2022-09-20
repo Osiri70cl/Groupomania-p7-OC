@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <h1 class="title-form">Inscrivez-vous dès aujourd'hui !</h1>
-    <div class="welcomeSection">
+    <div class="welcomeSection-form">
       <div id="login-form" class="formLayout">
         <signupForm />
       </div>
@@ -28,10 +28,10 @@ export default {
   background-color: #4e5166;
 }
 
-.welcomeSection {
+.welcomeSection-form {
   margin: 50px auto;
   max-width: 850px;
-  height: 700px;
+  height: 100%;
 }
 
 .formLayout {

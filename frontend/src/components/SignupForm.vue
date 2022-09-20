@@ -1,7 +1,7 @@
 <template>
   <div class="form-container">
     <form class="form">
-      <div class="input-div">
+      <div class="input-div-signup">
         <input
           v-model="firstName"
           class="inputs"
@@ -151,7 +151,7 @@ export default {
 .form {
   padding: 20px;
 }
-.input-div {
+.input-div-signup {
   display: flex;
   flex-direction: column;
   justify-content: center;
