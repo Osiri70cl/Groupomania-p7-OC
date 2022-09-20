@@ -210,7 +210,7 @@ export default {
   flex-wrap: wrap;
 }
 .user-text {
-  overflow: hidden;
+  line-break: anywhere;
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
@@ -224,10 +224,22 @@ export default {
 }
 
 @media screen and (max-width: 750px) {
+  .mainProfilArea {
+    height: 120vh;
+  }
   .mainProfilArea-center {
     width: 100%;
     height: 100%;
     background-color: white;
+  }
+  .user-div-info {
+    margin: 30px;
+  }
+  .user-info-text {
+    overflow-y: scroll;
+  }
+  .btn-top {
+    margin: 20px 20px 0px 15px;
   }
 }
 </style>
