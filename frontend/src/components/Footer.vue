@@ -1,7 +1,9 @@
 <template>
   <footer class="footer">
     <div class="text-container-footer">
-      <p class="text-center">© Rémi.P Projet 7 Groupomania OPENCLASSROOMS</p>
+      <a href="https://portfolio-remi.fr" class="text-center-footer"
+        >© Rémi.P Projet 7 Groupomania OPENCLASSROOMS</a
+      >
     </div>
   </footer>
 </template>
@@ -22,8 +24,12 @@
   align-items: center;
   justify-content: center;
 }
-p {
+.text-center-footer {
   color: white;
   font-size: 14px;
+  text-decoration: none;
+}
+.text-center-footer:hover {
+  cursor: pointer;
 }
 </style>
