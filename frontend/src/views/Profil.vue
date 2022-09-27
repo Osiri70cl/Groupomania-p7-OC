@@ -238,7 +238,7 @@ export default {
   color: rgb(104, 104, 104);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 979px) {
   .mainProfilArea {
     height: 120vh;
   }
@@ -251,6 +251,7 @@ export default {
     margin: 30px;
   }
   .user-info-text {
+    height: 300px;
     overflow-y: scroll;
   }
   .btn-top {

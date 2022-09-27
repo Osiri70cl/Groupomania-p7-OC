@@ -223,7 +223,7 @@ export default {
   color: rgb(104, 104, 104);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 979px) {
   .mainProfilArea {
     height: 120vh;
   }
