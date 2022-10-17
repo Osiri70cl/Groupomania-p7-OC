@@ -2,7 +2,7 @@
 import axios from "axios";
 import store from "../store/index";
 
-const API_URL = "api/"; // Le chemin de notre API ------------------------------
+const API_URL = "http://localhost:3000/api/"; // Le chemin de notre API ------------------------------
 
 export default () => {
   // Paramètres généraux qui seront utilisés par Axios ------------------------------------------------
