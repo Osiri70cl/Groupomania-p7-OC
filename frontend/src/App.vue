@@ -28,12 +28,12 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Montserrat", sans-serif;
 }
 h1,
 h2,
+p,
 h3,
 h4 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 </style>

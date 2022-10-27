@@ -3,7 +3,7 @@ const rateLimit = require("express-rate-limit"); // Utilisation du package Expre
 
 const limiter = rateLimit({
   windowMs: 10 * 60 * 1000, // Durée de blocage du compte
-  max: 100, // Nous avons droit à 5 tentatives de connexion à partir de la même IP avant d'être bloqué durant 10 min
+  max: 5, // Nous avons droit à 5 tentatives de connexion à partir de la même IP avant d'être bloqué durant 10 min
   message:
     "Nous avons constaté de nombreuses tentatives de connexion, cette IP est bloquée durant 10 minutes",
 });
